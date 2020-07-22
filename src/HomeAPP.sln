@@ -35,6 +35,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.SharedBases", "Sha
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth.Extensions", "Shared\Services\Auth.Extensions\Auth.Extensions\Auth.Extensions.csproj", "{A08C2350-88FC-44CA-BFC5-9CE26C28E073}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.WASM", "WebAPPs\SPA\Blazor.WASM\Blazor.WASM.csproj", "{CD770584-BE71-4735-8C24-76E09B9F1E26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{A08C2350-88FC-44CA-BFC5-9CE26C28E073}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A08C2350-88FC-44CA-BFC5-9CE26C28E073}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A08C2350-88FC-44CA-BFC5-9CE26C28E073}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD770584-BE71-4735-8C24-76E09B9F1E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD770584-BE71-4735-8C24-76E09B9F1E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD770584-BE71-4735-8C24-76E09B9F1E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD770584-BE71-4735-8C24-76E09B9F1E26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +88,7 @@ Global
 		{80EBDAA7-9AE9-4223-A506-936317F06484} = {3EC2ADB7-4F54-4C6D-BB56-9089A4BF4DAE}
 		{17CB4717-7469-4727-8F3B-48D06E23AB05} = {76BF2EE1-331B-41C0-888E-6DA142310317}
 		{A08C2350-88FC-44CA-BFC5-9CE26C28E073} = {76BF2EE1-331B-41C0-888E-6DA142310317}
+		{CD770584-BE71-4735-8C24-76E09B9F1E26} = {E32A03DE-A555-4448-A739-ADF3CD57446D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0867F26-DA47-4921-B35B-FA9257B36136}
