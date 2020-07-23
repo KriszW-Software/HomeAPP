@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OLM.Shared.Exceptions.DataManagerExceptions
+namespace HomeAPP.Shared.Exceptions.DataManagerExceptions
 {
     public class DataNotFoundWithSpecifiedColumnException<TColumn> : ContainsKeyAndValueBaseException<TColumn>
     {
