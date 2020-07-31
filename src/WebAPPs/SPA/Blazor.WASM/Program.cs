@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using AKSoftware.Localization.MultiLanguages;
+using System.Reflection;
+using System.Globalization;
 
 namespace HomeAPP.WebAPPs.SPA.Blazor.WASM
 {
@@ -16,6 +19,8 @@ namespace HomeAPP.WebAPPs.SPA.Blazor.WASM
         {
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("app");
+
+            builder.Services.AddLanguageContainer(Assembly.GetExecutingAssembly());
 
             builder.Services.AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
