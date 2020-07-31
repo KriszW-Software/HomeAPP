@@ -47,7 +47,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tender", "Tender", "{CF3B15
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E64F4C81-3E2F-4C01-8349-7C263193CF86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tender.API", "Services\Tender\Tender.API\Tender.API.csproj", "{10859A8F-780B-448D-A94F-69096E0DADA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tender.API", "Services\Tender\Tender.API\Tender.API.csproj", "{10859A8F-780B-448D-A94F-69096E0DADA7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C911CDF3-4234-4D59-A6A5-80B29438DC4C}"
 EndProject
@@ -55,19 +55,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{312F3264
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{AB956BD9-7E82-48F8-8220-5603E03DD94D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.API", "Services\Project\Project.API\Project.API.csproj", "{6F678D14-66EE-4222-A6AC-B341B78E92E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.API", "Services\Project\Project.API\Project.API.csproj", "{6F678D14-66EE-4222-A6AC-B341B78E92E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.API", "Services\Blog\Blog.API\Blog.API.csproj", "{BC535339-883A-4E0D-9EB0-53280C6DDADB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.API", "Services\Blog\Blog.API\Blog.API.csproj", "{BC535339-883A-4E0D-9EB0-53280C6DDADB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.API", "Services\Identity\Identity.API\Identity.API.csproj", "{C055404D-D5FF-411D-8E79-A209BAAB1F62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.API", "Services\Identity\Identity.API\Identity.API.csproj", "{C055404D-D5FF-411D-8E79-A209BAAB1F62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Tests.API", "Services\Blog\Tests\Blog.Tests.API\Blog.Tests.API.csproj", "{7825C9F7-5A6B-4938-9FDB-74E778DC1F1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Tests.API", "Services\Blog\Tests\Blog.Tests.API\Blog.Tests.API.csproj", "{7825C9F7-5A6B-4938-9FDB-74E778DC1F1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Tests.API", "Services\Identity\Tests\Identity.Tests.API\Identity.Tests.API.csproj", "{6EBF7ABA-3EDB-4196-B139-22B002F72F4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Tests.API", "Services\Identity\Tests\Identity.Tests.API\Identity.Tests.API.csproj", "{6EBF7ABA-3EDB-4196-B139-22B002F72F4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Tests.API", "Services\Project\Tests\Project.Tests.API\Project.Tests.API.csproj", "{C2731A81-10FC-4651-934D-9AEE3F8D0CB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.Tests.API", "Services\Project\Tests\Project.Tests.API\Project.Tests.API.csproj", "{C2731A81-10FC-4651-934D-9AEE3F8D0CB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tender.Tests.API", "Services\Tender\Tests\Tender.Tests.API\Tender.Tests.API.csproj", "{D6C5A3F0-9241-466C-BDE8-712F12FCD29C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tender.Tests.API", "Services\Tender\Tests\Tender.Tests.API\Tender.Tests.API.csproj", "{D6C5A3F0-9241-466C-BDE8-712F12FCD29C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
