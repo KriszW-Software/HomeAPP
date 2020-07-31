@@ -1,0 +1,25 @@
+﻿@page "/settings"
+
+@inject ILanguageContainerService LanguageContainerService
+
+    <MatExpansionPanel>
+        <MatExpansionPanelSummary>
+            <MatExpansionPanelHeader>@LanguageContainerService.Keys["Language"]</MatExpansionPanelHeader>
+        </MatExpansionPanelSummary>
+        <MatExpansionPanelDetails>
+            <MatSelect TValue="string" ValueChanged="v => SetLanguage(v)">
+                <MatOptionString Value="en-US">English</MatOptionString>
+                <MatOptionString Value="de-DE">Deutsh</MatOptionString>
+                <MatOptionString Value="hu-HU">Magyar</MatOptionString>
+            </MatSelect>
+        </MatExpansionPanelDetails>
+    </MatExpansionPanel>
+
+
+@code{
+    public void SetLanguage(string cultureInfo)
+    {
+        var culture = System.Globalization.CultureInfo.GetCultureInfo(cultureInfo);
+        LanguageContainerService.SetLanguage(culture);
+    }
+}
