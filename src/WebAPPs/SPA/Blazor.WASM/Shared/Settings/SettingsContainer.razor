@@ -1,0 +1,13 @@
+﻿@inject NavigationManager NavManager
+
+<div class="settings-container" @onclick="() => NavigateToSettings()">
+    <MatIcon Icon="@MatIconNames.Settings" />
+</div>
+
+@code{
+
+    public void NavigateToSettings()
+    {
+        NavManager.NavigateTo("/settings");
+    }
+}
