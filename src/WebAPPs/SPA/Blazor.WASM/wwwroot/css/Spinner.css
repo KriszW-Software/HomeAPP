@@ -1,14 +1,14 @@
 ﻿.spinner-container {
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
-
-    width:100%;
 }
 
 .spinner {
     border: 16px solid silver;
-    border-top: 16px solid #ce0000;
+    border-top: 16px solid var(--pCol);
     border-radius: 50%;
     width: 80px;
     height: 80px;

@@ -1,19 +1,17 @@
-﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+﻿:root{
+    --pCol: #0277bc;
+    --pColL: #0277bc;
+    --pColD: #0277bc;
+    --pColT: #ffffff;
+}
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-a, .btn-link {
-    color: #0366d6;
+a{
+    color:var(--pColT);
 }
-
-.btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-}
-
 app {
     position: relative;
     display: flex;
@@ -31,7 +29,7 @@ app {
 }
 
     .main .top-row {
-        background-color: #f7f7f7;
+        background-color: var(--pColD);
         border-bottom: 1px solid #d6d5d5;
         justify-content: flex-end;
     }
@@ -47,8 +45,17 @@ app {
 }
 
 .sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background-color: var(--pCol);
+    color: var(--pColT);
 }
+
+    .sidebar .dark {
+        background-color: var(--pColD);
+    }
+
+    .sidebar .light {
+        background-color: var(--pColL);
+    }
 
     .sidebar .top-row {
         background-color: rgba(0,0,0,0.4);
@@ -65,38 +72,6 @@ app {
         top: -2px;
     }
 
-    .sidebar .nav-item {
-        font-size: 0.9rem;
-        padding-bottom: 0.5rem;
-    }
-
-        .sidebar .nav-item:first-of-type {
-            padding-top: 1rem;
-        }
-
-        .sidebar .nav-item:last-of-type {
-            padding-bottom: 1rem;
-        }
-
-        .sidebar .nav-item a {
-            color: #d7d7d7;
-            border-radius: 4px;
-            height: 3rem;
-            display: flex;
-            align-items: center;
-            line-height: 3rem;
-        }
-
-            .sidebar .nav-item a.active {
-                background-color: rgba(255,255,255,0.25);
-                color: white;
-            }
-
-            .sidebar .nav-item a:hover {
-                background-color: rgba(255,255,255,0.1);
-                color: white;
-            }
-
 .content {
     padding-top: 1.1rem;
 }
@@ -105,16 +80,10 @@ app {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.valid.modified:not([type=checkbox]) {
-    outline: 1px solid #26b050;
-}
-
-.invalid {
-    outline: 1px solid red;
-}
-
-.validation-message {
-    color: red;
+.settings-container {
+    width: 25px;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 #blazor-error-ui {
