@@ -1,19 +1,48 @@
-﻿<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">KriszW Software</a>
-    <button class="navbar-toggler" @onclick="ToggleNavMenu">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+﻿@using HomeAPP.WebAPPs.SPA.Blazor.WASM.Shared.Settings
+
+@inject ILanguageContainerService LocalizationService
+
+
+<div class="top-row pl-4 navbar navbar-dark d-flex justify-content-between">
+    <a class="navbar-brand" href="">@LocalizationService.Keys["BrandName"]</a>
+
+    <div class="d-flex align-items-center">
+        <button class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <SettingsContainer />
+    </div>
 </div>
 
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <ul class="nav flex-column">
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <MatIcon Class="m-icon" Icon="@MatIconNames.Home" /> Kezdőlap
-            </NavLink>
-        </li>
-    </ul>
+    <MatNavMenu>
+        <MatNavItem Class="app-nav-link" NavLinkMatch="NavLinkMatch.All" Href="">
+            @LocalizationService.Keys["HomePage"]
+        </MatNavItem>
+
+        <MatNavItem Class="app-nav-link" NavLinkMatch="NavLinkMatch.All" Href="">
+            @LocalizationService.Keys["OurProducts"]
+        </MatNavItem>
+
+        <MatNavItem Class="app-nav-link" NavLinkMatch="NavLinkMatch.All" Href="">
+            @LocalizationService.Keys["AboutUs"]
+        </MatNavItem>
+
+        <MatNavItem Class="app-nav-link" NavLinkMatch="NavLinkMatch.All" Href="">
+            @LocalizationService.Keys["OurCompany"]
+        </MatNavItem>
+
+        <MatNavItem Class="app-nav-link" NavLinkMatch="NavLinkMatch.All" Href="">
+            @LocalizationService.Keys["Contacts"]
+        </MatNavItem>
+
+        <MatNavItem Class="app-nav-link" NavLinkMatch="NavLinkMatch.All" Href="">
+            @LocalizationService.Keys["News"]
+        </MatNavItem>
+    </MatNavMenu>
 </div>
+
+
 
 @code {
     private bool collapseNavMenu = true;
