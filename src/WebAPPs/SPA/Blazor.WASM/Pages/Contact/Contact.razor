@@ -1,0 +1,27 @@
+﻿@page "/contact"
+
+@using HomeAPP.WebAPPs.SPA.Blazor.WASM.Pages.Contact.Components 
+
+@inject ILanguageContainerService LocalizationService
+@*bal olda*@
+<div>
+    <MatH1>@LocalizationService.Keys["Contact_Title"]</MatH1>
+
+    <p>@LocalizationService.Keys["Contact_WeWillContactYou"]</p>
+    <p>@LocalizationService.Keys["Contact_SendTender"]</p>
+
+    <MatDivider />
+
+    <MatH2>@LocalizationService.Keys["Contact_ContactData_Title"]</MatH2>
+    @*Közepre igazítva egymás alá*@
+    <span>@LocalizationService.Keys["Contact_ContactData_Email"]</span>
+    <span>@LocalizationService.Keys["Contact_ContactData_Phone"]</span>
+    <span>@LocalizationService.Keys["Contact_ContactData_LandLine"]</span>
+</div>
+
+@*jobb olda*@
+<div>
+    <ContactForm />
+</div>
+
+
