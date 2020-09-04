@@ -1,0 +1,29 @@
+﻿@inject ILanguageContainerService LocalizationService
+@inject NavigationManager NavManager 
+
+@*
+    Egy footer olyan lapok aljára ahol a céget vagy szolgáltatást mutat be.
+    Egy feltűnő div amibe baloldalt bele van írva, hogy 'Vegye fel velünk a kapcsolatot'
+*@
+
+<div class="mat-layout-grid">
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-cell">
+            @LocalizationService.Keys["ContactFooter_GoToContact"]
+        </div>
+        <div class="mat-layout-grid-cell">
+            <img src="http://cdn.kwsoft.dev/img/aboutus/whychooseus.svg" alt="@LocalizationService.Keys["ContactFooter_ImageAlt_GoToContact"]" />
+        </div>
+        <div class="mat-layout-grid-cell">
+            <MatButton Raised="true" OnClick="() => GoToContact()" Label="@LocalizationService.Keys["ContactFooter_GoToContact_ButtonLabel"]" />
+        </div>
+    </div>
+</div>
+
+@code
+{
+    private void GoToContact()
+    {
+        NavManager.NavigateTo("/contact");
+    }
+}

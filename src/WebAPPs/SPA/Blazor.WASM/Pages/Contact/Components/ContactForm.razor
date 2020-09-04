@@ -1,0 +1,24 @@
+﻿@inject ILanguageContainerService LocalizationService
+
+@*<EditForm Model="tenderModel" OnSubmit="() => Task.CompletedTask">
+    <ServerSideValidator @ref="_serverSideValidator" />
+    <MatDialogContent>
+
+        <MatTextField Label="Dimenzió" @bind-Value="@State.Value.ModelForEdit.Dimension" TValue="string" />
+        <ValidationMessage For="@(()=> State.Value.ModelForEdit.Dimension)" />
+
+    </MatDialogContent>
+    <MatDialogActions>
+        <MatButton TrailingIcon="@MatIconNames.Cloud_upload" OnClick="Submit" Label="@LocalizationService.Keys["Contact_ContactForm_SubmitLabel"]" />
+    </MatDialogActions>
+</EditForm>*@
+
+@code{
+
+    private ServerSideValidator _serverSideValidator;
+
+    private void Submit()
+    {
+
+    }
+}
