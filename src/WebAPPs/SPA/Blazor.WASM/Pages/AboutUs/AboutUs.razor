@@ -1,0 +1,61 @@
+﻿@page "/aboutus"
+
+@inject ILanguageContainerService LocalizationService
+
+
+
+<h1 class="">@LocalizationService.Keys["AboutUs_AboutUs"]</h1>
+
+<div class="mat-layout-grid">
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-cell">
+            <h2>@LocalizationService.Keys["AboutUs_OurCompany"]</h2>
+            <p>@LocalizationService.Keys["AboutUs_OurCompany_Paragraph"]</p>
+        </div>
+        <div class="mat-layout-grid-cell">
+            <img src="http://cdn.kwsoft.dev/img/aboutus/ourcompany.svg" alt="@LocalizationService.Keys["AboutUs_ImageAlt_OurCompany"]" />
+        </div>
+    </div>
+</div>
+
+<MatDivider />
+
+<div class="mat-layout-grid">
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-cell">
+            <img src="http://cdn.kwsoft.dev/img/aboutus/whychooseus.svg" alt="@LocalizationService.Keys["AboutUs_ImageAlt_WhyChooseUs"]" />
+        </div>
+        <div class="mat-layout-grid-cell">
+            <h2>@LocalizationService.Keys["AboutUs_WhyChooseUs"]</h2>
+            <p>@LocalizationService.Keys["AboutUs_WhyChooseUs_Paragraph"]</p>
+        </div>
+    </div>
+</div>
+
+<MatDivider />
+
+<div class="mat-layout-grid">
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-cell">
+            <h2>@LocalizationService.Keys["AboutUs_HowWeWork"]</h2>
+            <p>@LocalizationService.Keys["AboutUs_HowWeWork_Paragraph"]</p>
+        </div>
+        <div class="mat-layout-grid-cell">
+            <img src="http://cdn.kwsoft.dev/img/aboutus/whychooseus.svg" alt="@LocalizationService.Keys["AboutUs_ImageAlt_HowWeWork"]" />
+        </div>
+    </div>
+</div>
+
+<MatDivider />
+
+<div class="mat-layout-grid">
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-cell">
+            <h2>@LocalizationService.Keys["AboutUs_WhatWeWorkWith"]</h2>
+            <p>@LocalizationService.Keys["AboutUs_WhatWeWorkWith_Paragraph"]</p>
+        </div>
+        <div class="mat-layout-grid-cell">
+            <img src="http://cdn.kwsoft.dev/img/aboutus/whatweworkwith.svg" alt="@LocalizationService.Keys["AboutUs_ImageAlt_WhatWeWorkWith"]" />
+        </div>
+    </div>
+</div>
