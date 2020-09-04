@@ -1,3 +1,6 @@
+@inject IStorageRepository StorageRepository
+@inject ILanguageContainerService LanguageContainerService
+
 <MatThemeProvider Theme="theme">
     <Router AppAssembly="@typeof(Program).Assembly">
         <Found Context="routeData">
@@ -5,7 +8,7 @@
         </Found>
         <NotFound>
             <LayoutView Layout="@typeof(MainLayout)">
-                <p>Sorry, there's nothing at this address.</p>
+                <HomeAPP.WebAPPs.SPA.Blazor.WASM.Shared.ErrorPages._404 />
             </LayoutView>
         </NotFound>
     </Router>
@@ -18,4 +21,12 @@
         Secondary = "#0277bc"
     };
 
+    protected override async Task OnInitializedAsync()
+    {
+        var cultureInfo = await StorageRepository.GetItem<string>("lang");
+
+        if(cultureInfo != default) LanguageContainerService.SetLanguage(System.Globalization.CultureInfo.GetCultureInfo(cultureInfo));
+
+        await base.OnInitializedAsync();
+    }
 }
