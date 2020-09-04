@@ -1,1 +1,17 @@
 ﻿@page "/"
+
+@inject ILanguageContainerService LocalizationService
+
+<MatH1>@LocalizationService.Keys["Homepage_Title"]@*Egyedi szoftverek, mobil appok, ipari szoftverek fejlesztési*@</MatH1>
+
+@*Kép slide show*@
+
+
+<MatH2>@LocalizationService.Keys["Homepage_OurCompanyNotWorkingWithOldTech"]@*A cégünk nem foglalkozik a régi rendszerekkel, amit 1-2 éven belűl már le kell cserélni*@</MatH2>
+@*kép*@
+<MatH2>@LocalizationService.Keys["Homepage_OurCompanyMotto"]@*Mi csak is a legújabb, és a projekthez legjobb technológiákat használjuk, mert mindenki meg érdemli azt hogy a lehető legújabb technológiát kapja a befektetésébe.*@</MatH2>
+@*kép*@
+
+
+
+<HomeAPP.WebAPPs.SPA.Blazor.WASM.Pages.Contact.Components.ContactFooter />
