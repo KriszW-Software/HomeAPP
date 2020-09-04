@@ -1,0 +1,107 @@
+﻿@page "/services"
+@inject ILanguageContainerService LocalizationService
+
+@using HomeAPP.WebAPPs.SPA.Blazor.WASM.Pages.Services.Component 
+
+@*
+    <----------------------------------------->
+
+    Unique Software Development
+    Web dev
+        API
+    Mobile dev
+    AI
+        Machine learning
+    Data Architecture
+    UX Design
+    Industry 4.0
+    Technologies we use
+
+    <----------------------------------------->
+*@
+
+<div class="toi-container">
+    <img src="https://via.placeholder.com/1000x300" alt="@LocalizationService.Keys["Services_ImageAlt_TextOverImage"]" class="toi-image" style="width:100%;">
+    <div class="toi-text-centered">@LocalizationService.Keys["Services_TextOverImage_Text"]</div>
+</div>
+
+<div class="services-container">
+
+    <div class="mat-layout-grid">
+        <div class="mat-layout-grid-inner">
+            <div class="mat-layout-grid-cell mat-layout-grid-cell">
+                <ServiceCardComponent ImageSRC="https://via.placeholder.com/300" ServiceURL="uniquedev">
+
+                    <Title>@LocalizationService.Keys["Services_ServiceCards_Card1_Title"]</Title>
+
+                    <Content>@LocalizationService.Keys["Services_ServiceCards_Card1_Content"]</Content>
+
+                </ServiceCardComponent>
+            </div>
+            <div class="mat-layout-grid-cell mat-layout-grid-cell">
+                <ServiceCardComponent ImageSRC="https://via.placeholder.com/300" ServiceURL="webdev">
+
+                    <Title>@LocalizationService.Keys["Services_ServiceCards_Card2_Title"]</Title>
+
+                    <Content>@LocalizationService.Keys["Services_ServiceCards_Card2_Content"]</Content>
+
+                </ServiceCardComponent>
+            </div>
+            <div class="mat-layout-grid-cell mat-layout-grid-cell">
+                <ServiceCardComponent ImageSRC="https://via.placeholder.com/300" ServiceURL="mobiledev">
+
+                    <Title>@LocalizationService.Keys["Services_ServiceCards_Card3_Title"]</Title>
+
+                    <Content>@LocalizationService.Keys["Services_ServiceCards_Card3_Content"]</Content>
+
+                </ServiceCardComponent>
+            </div>
+            <div class="mat-layout-grid-cell mat-layout-grid-cell">
+                <ServiceCardComponent ImageSRC="https://via.placeholder.com/300" ServiceURL="industry40">
+
+                    <Title>@LocalizationService.Keys["Services_ServiceCards_Card4_Title"]</Title>
+
+                    <Content>@LocalizationService.Keys["Services_ServiceCards_Card4_Content"]</Content>
+
+                </ServiceCardComponent>
+            </div>
+            <div class="mat-layout-grid-cell mat-layout-grid-cell">
+                <ServiceCardComponent ImageSRC="https://via.placeholder.com/300" ServiceURL="uxdev">
+
+                    <Title>@LocalizationService.Keys["Services_ServiceCards_Card5_Title"]</Title>
+
+                    <Content>@LocalizationService.Keys["Services_ServiceCards_Card5_Content"]</Content>
+
+                </ServiceCardComponent>
+            </div>
+            <div class="mat-layout-grid-cell mat-layout-grid-cell">
+                <ServiceCardComponent ImageSRC="https://via.placeholder.com/300" ServiceURL="aidev">
+
+                    <Title>@LocalizationService.Keys["Services_ServiceCards_Card6_Title"]</Title>
+
+                    <Content>@LocalizationService.Keys["Services_ServiceCards_Card6_Content"]</Content>
+
+                </ServiceCardComponent>
+            </div>
+            <div class="mat-layout-grid-cell mat-layout-grid-cell">
+                <ServiceCardComponent ImageSRC="https://via.placeholder.com/300" ServiceURL="datadev">
+
+                    <Title>@LocalizationService.Keys["Services_ServiceCards_Card7_Title"]</Title>
+
+                    <Content>@LocalizationService.Keys["Services_ServiceCards_Card7_Content"]</Content>
+
+                </ServiceCardComponent>
+            </div>
+            <div class="mat-layout-grid-cell mat-layout-grid-cell">
+                <ServiceCardComponent ImageSRC="https://via.placeholder.com/300" ServiceURL="techweuse">
+
+                    <Title>@LocalizationService.Keys["Services_ServiceCards_Card8_Title"]</Title>
+
+                    <Content>@LocalizationService.Keys["Services_ServiceCards_Card8_Content"]</Content>
+
+                </ServiceCardComponent>
+            </div>
+        </div>
+    </div>
+
+</div>
