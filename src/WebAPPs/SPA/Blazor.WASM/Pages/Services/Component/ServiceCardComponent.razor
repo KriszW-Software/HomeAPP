@@ -1,0 +1,46 @@
+﻿@inject ILanguageContainerService LocalizationService
+@inject NavigationManager NavManager
+
+<MatCard Class="service-card-container">
+
+
+
+    <MatCardContent Class="service-card-content">
+        <div class="text-center">
+            <MatHeadline5 Class="service-card-title">@Title</MatHeadline5>
+        </div>
+        
+
+        <MatCardMedia ImageUrl="@ImageSRC" Class="service-card-image" Wide="true" />
+
+        <MatBody2 class="service-card-text">
+            @Content
+        </MatBody2>
+    </MatCardContent>
+
+    <div class="d-flex justify-content-center">
+        <MatCardActions>
+            <MatCardActionButtons>
+
+                <MatButton OnClick="() => NavManager.NavigateTo(ServiceURL)" Raised="true" Label="@LocalizationService.Keys["ServiceCardComponenet_CardAction_NavTo_Label"]" />
+
+            </MatCardActionButtons>
+        </MatCardActions>
+    </div>
+</MatCard>
+
+@code{
+
+    [Parameter]
+    public string ImageSRC { get; set; }
+     
+    [Parameter]
+    public string ServiceURL { get; set; }
+
+    [Parameter]
+    public RenderFragment Title { get; set; }
+
+    [Parameter]
+    public RenderFragment Content { get; set; }
+
+}
