@@ -1,25 +1,34 @@
 ﻿@page "/settings"
 
 @inject ILanguageContainerService LanguageContainerService
+@inject IStorageRepository StorageRepo
+@inject NavigationManager NavManager
 
-    <MatExpansionPanel>
-        <MatExpansionPanelSummary>
-            <MatExpansionPanelHeader>@LanguageContainerService.Keys["Language"]</MatExpansionPanelHeader>
-        </MatExpansionPanelSummary>
-        <MatExpansionPanelDetails>
-            <MatSelect TValue="string" ValueChanged="v => SetLanguage(v)">
-                <MatOptionString Value="en-US">English</MatOptionString>
-                <MatOptionString Value="de-DE">Deutsh</MatOptionString>
-                <MatOptionString Value="hu-HU">Magyar</MatOptionString>
-            </MatSelect>
-        </MatExpansionPanelDetails>
-    </MatExpansionPanel>
+<MatExpansionPanel>
+    <MatExpansionPanelSummary>
+        <MatExpansionPanelHeader>@LanguageContainerService.Keys["Settings_Language"]</MatExpansionPanelHeader>
+    </MatExpansionPanelSummary>
+    <MatExpansionPanelDetails>
+
+        <MatSelect TValue="string" ValueChanged="v => SetLanguage(v)">
+            <MatOptionString Value="en-US">English</MatOptionString>
+            <MatOptionString Value="de-DE">Deutsh</MatOptionString>
+            <MatOptionString Value="hu-HU">Magyar</MatOptionString>
+        </MatSelect>
+        
+    </MatExpansionPanelDetails>
+</MatExpansionPanel>
+
 
 
 @code{
-    public void SetLanguage(string cultureInfo)
+    async Task SetLanguage(string cultureInfo)
     {
-        var culture = System.Globalization.CultureInfo.GetCultureInfo(cultureInfo);
-        LanguageContainerService.SetLanguage(culture);
+        LanguageContainerService.SetLanguage(System.Globalization.CultureInfo.GetCultureInfo(cultureInfo));
+        await StorageRepo.SetItem("lang", cultureInfo);
+
+        NavManager.NavigateTo("/", true);
+
+        StateHasChanged();
     }
 }
