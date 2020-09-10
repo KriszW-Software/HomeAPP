@@ -2,43 +2,92 @@
 
 @inject ILanguageContainerService LocalizationService
 
-<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3 fixed-top background-prim-color">
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3 fixed-top background-prim-color d-flex">
     <div class="container">
-        <a class="navbar-brand text-light" href="/">@LocalizationService.Keys["GLOBAL_BRANDNAME"]</a>
+        <a class="navbar-brand text-light align-self-baseline" href="/">@LocalizationService.Keys["GLOBAL_BRANDNAME"]</a>
         
         <button class="navbar-toggler" @onclick="ToggleNavMenu" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="@LocalizationService.Keys["NavMenu_ToogleButtonLabel"]">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="@NavMenuCssClass navbar-collapse d-sm-inline-flex flex-sm-row-reverse" @onclick="ToggleNavMenu">
+        <div class="@NavMenuCssClass navbar-collapse d-sm-inline-flex flex-sm-row-reverse">
             <div class="navbar-nav flex-grow-1">
-                <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="">
-                    @LocalizationService.Keys["NavMenu_HomePage"]
-                </NavLink>
 
-                <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/services">
-                    @LocalizationService.Keys["NavMenu_Services"]
-                </NavLink>
+                <div class="nav-item">
+                    <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="">
+                        @LocalizationService.Keys["NavMenu_HomePage"]
+                    </NavLink>
+                </div>
 
-                <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/aboutus">
-                    @LocalizationService.Keys["NavMenu_AboutUs"]
-                </NavLink>
+                <div class="nav-item dropdown">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/services">
+                            @LocalizationService.Keys["NavMenu_Services"]
+                        </NavLink>
 
-                <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/contact">
-                    @LocalizationService.Keys["NavMenu_Contact"]
-                </NavLink>
+                        <MatIcon Icon="@ServicesDropdownIconClass" Class="text-white" @onclick="ToggleServices" />
+                    </div>
+                    
+                    
 
-                <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/career">
-                    @LocalizationService.Keys["NavMenu_Career"]
-                </NavLink>
+                    <div class="dropdown-menu @(collapseServices ? "d-none" : "d-block") text-white background-prim-color">
+                        <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/uniquedev">
+                            @LocalizationService.Keys["NavMenu_Services_UniqueDev"]
+                        </NavLink>
+                        <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/webdev">
+                            @LocalizationService.Keys["NavMenu_Services_WebDev"]
+                        </NavLink>
+                        <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/mobiledev">
+                            @LocalizationService.Keys["NavMenu_Services_MobileDev"]
+                        </NavLink>
+                        <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/industry40">
+                            @LocalizationService.Keys["NavMenu_Services_Industry40"]
+                        </NavLink>
+                        <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/uxdev">
+                            @LocalizationService.Keys["NavMenu_Services_UX"]
+                        </NavLink>
+                        <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/aidev">
+                            @LocalizationService.Keys["NavMenu_Services_AI"]
+                        </NavLink>
+                        <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/datadev">
+                            @LocalizationService.Keys["NavMenu_Services_Data"]
+                        </NavLink>
+                        <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/techweuse">
+                            @LocalizationService.Keys["NavMenu_Services_TechWeUse"]
+                        </NavLink>
+                    </div>
+                </div>
 
-                <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/news">
-                    @LocalizationService.Keys["NavMenu_News"]
-                </NavLink>
+
+
+                <div class="nav-item">
+                    <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/aboutus">
+                        @LocalizationService.Keys["NavMenu_AboutUs"]
+                    </NavLink>
+                </div>
+
+                <div class="nav-item">
+                    <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/contact">
+                        @LocalizationService.Keys["NavMenu_Contact"]
+                    </NavLink>
+                </div>
+
+                <div class="nav-item">
+                    <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/career">
+                        @LocalizationService.Keys["NavMenu_Career"]
+                    </NavLink>
+                </div>
+
+                <div class="nav-item">
+                    <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/news">
+                        @LocalizationService.Keys["NavMenu_News"]
+                    </NavLink>
+                </div>
 
                 <div class="align-self-end">
                     <SettingsContainer />
                 </div>
+
             </div>
         </div>
     </div>
@@ -49,10 +98,13 @@
 @code {
     private bool collapseNavMenu = true;
 
+    private bool collapseServices = true;
+
+    private string ServicesDropdownIconClass => collapseServices ? MatIconNames.Arrow_drop_down : MatIconNames.Arrow_drop_up;
+
     private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
+    private void ToggleNavMenu() => collapseNavMenu = !collapseNavMenu;
+
+    private void ToggleServices() => collapseServices = !collapseServices;
 }
