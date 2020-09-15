@@ -1,17 +1,25 @@
 ﻿GLOBAL_BRANDNAME: KriszW Software
 NavMenu_HomePage: Home
 NavMenu_Services: Services
+NavMenu_Services_UniqueDev: Unique software development
+NavMenu_Services_WebDev: Web development
+NavMenu_Services_MobileDev: Mobile development
+NavMenu_Services_Industry40: Industry 4.0
+NavMenu_Services_UX: UX development
+NavMenu_Services_AI: AI development
+NavMenu_Services_Data: Data Architecture development
+NavMenu_Services_TechWeUse: Technologies we use
 NavMenu_AboutUs: About us
 NavMenu_Contact: Contact
 NavMenu_Career: Career
 NavMenu_News: News
-NavMenu_ToogleButtonLabel: Toogle navigation
+NavMenu_ToggleButtonLabel: Toggle navigation
 Settings_Language: Language
 Homepage_Title: Unique software solutions, mobile and web apps, industrial software design solutions and Industry 4.0
 Homepage_OurCompanyNotWorkingWithOldTech: We do NOT work with old technologies what you have to rewrite after 2-3 years
 Homepage_OurCompanyMotto: We only work with the latest and best technologies, because that is what our clients deserve for their money.
 Contact_Title: Please contact us right now!
-Contact_WeWillContactYou: Would you work with us? It would be a pleasure for us! Please send your message and we will reply within 24 hours
+Contact_WeWillContactYou: Would you work with us?  It would be a pleasure for us! Please send your message and we will reply within 24 hours
 Contact_SendTender: You can send your tender here as well. It will speed up the process of getting your new project ready.
 Contact_ContactData_Title: Contact
 Contact_ContactData_Email: info@kwsoft.dev
@@ -52,4 +60,6 @@ Services_ServiceCards_Card7_Title: Data Architecture development
 Services_ServiceCards_Card7_Content: Sed tellus mi, fermentum nec hendrerit ac, dictum eu lacus. Proin vitae magna ac urna tempus laoreet. Aenean turpis urna, sollicitudin eu urna non, tristique molestie orci. Fusce finibus odio non ante finibus semper. Etiam gravida aliquam sem id suscipit. In et est at dui lobortis tincidunt.
 Services_ServiceCards_Card8_Title: Technologies we use
 Services_ServiceCards_Card8_Content: Nam velit magna, sodales sit amet tempor lacinia, tempus at erat. Nunc volutpat odio sit amet varius volutpat. Nullam ornare metus pellentesque enim vulputate, et congue sem semper.
-ServiceCardComponenet_CardAction_NavTo_Label: Know more
+Services_ServiceCards_Card9_Title: Process & Strategy
+Services_ServiceCards_Card9_Content: Nullam ornare metus pellentesque enim vulputate, et congue sem semper. Nam velit magna, sodales sit amet tempor lacinia, tempus at erat. Nunc volutpat odio sit amet varius volutpat.
+ServiceCardComponenet_CardAction_NavTo_Label: Learn more
