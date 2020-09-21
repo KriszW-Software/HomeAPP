@@ -12,9 +12,6 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-a{
-    color:var(--pColT);
-}
 app {
     position: relative;
     display: flex;
