@@ -1,4 +1,8 @@
 ﻿GLOBAL_BRANDNAME: KriszW Software
+GLOBAL_ContactData_Email: info@kwsoft.dev
+GLOBAL_ContactData_Phone: +36309136248
+GLOBAL_ContactData_LandLine: No landline yet
+GLOBAL_HEADOFFICE_ADDRESS: 9408 Sopron-Görbehalom Csillés köz 1
 NavMenu_HomePage: Home
 NavMenu_Services: Services
 NavMenu_Services_UniqueDev: Unique software development
@@ -22,9 +26,6 @@ Contact_Title: Please contact us right now!
 Contact_WeWillContactYou: Would you work with us?  It would be a pleasure for us! Please send your message and we will reply within 24 hours
 Contact_SendTender: You can send your tender here as well. It will speed up the process of getting your new project ready.
 Contact_ContactData_Title: Contact
-Contact_ContactData_Email: info@kwsoft.dev
-Contact_ContactData_Phone: +36309136248
-Contact_ContactData_LandLine: No landline yet
 Contact_ContactForm_SubmitLabel: Submit message
 ContactFooter_GoToContact: Contact us now
 ContactFooter_ImageAlt_GoToContact: Contact us now image
@@ -63,3 +64,15 @@ Services_ServiceCards_Card8_Content: Nam velit magna, sodales sit amet tempor la
 Services_ServiceCards_Card9_Title: Process & Strategy
 Services_ServiceCards_Card9_Content: Nullam ornare metus pellentesque enim vulputate, et congue sem semper. Nam velit magna, sodales sit amet tempor lacinia, tempus at erat. Nunc volutpat odio sit amet varius volutpat.
 ServiceCardComponenet_CardAction_NavTo_Label: Learn more
+Footer_AboutUs_Title: About us
+Footer_AboutUs_HeadOffice: Head office
+Footer_AboutUs_EMAIL: Email
+Footer_AboutUs_Phone: Phone number
+Footer_Services_Title: Services
+Footer_UsefullLinks_Title: Usefull links
+Footer_UsefullLinks_AboutUs: About us
+Footer_UsefullLinks_Career: Career
+Footer_UsefullLinks_News: News
+Footer_UsefullLinks_PrivacyPolicy: Privacy policy
+Footer_UsefullLinks_Contact: Contact
+Footer_UsefullLinks_References: References
