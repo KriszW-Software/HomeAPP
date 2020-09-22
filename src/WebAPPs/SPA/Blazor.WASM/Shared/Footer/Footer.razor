@@ -1,3 +1,153 @@
-﻿<footer>
+﻿@inject ILanguageContainerService LocalizationService
 
+<footer class="footer">
+    <div class="mat-layout-grid">
+        <div class="mat-layout-grid-inner">
+            <div class="mat-layout-grid-cell">
+                <div class="mat-layout-grid">
+                    <div class="mat-layout-grid-inner mb-5">
+                        <div class="mat-layout-grid-cell">@LocalizationService.Keys["Footer_AboutUs_Title"]</div>
+                    </div>
+                    <div class="mat-layout-grid-inner mb-4">
+                        <div class="mat-layout-grid-cell">@LocalizationService.Keys["GLOBAL_BRANDNAME"]</div>
+                    </div>
+                    <div class="mat-layout-grid-inner">
+                        <div class="mat-layout-grid-cell">
+                            @LocalizationService.Keys["Footer_AboutUs_HeadOffice"]: @LocalizationService.Keys["GLOBAL_HEADOFFICE_ADDRESS"]
+                        </div>
+                    </div>
+                    <div class="mat-layout-grid-inner">
+                        <div class="mat-layout-grid-cell">
+                            @LocalizationService.Keys["Footer_AboutUs_EMAIL"]: @LocalizationService.Keys["GLOBAL_ContactData_Email"]
+                        </div>
+                    </div>
+                    <div class="mat-layout-grid-inner">
+                        <div class="mat-layout-grid-cell">
+                            @LocalizationService.Keys["Footer_AboutUs_Phone"]: @LocalizationService.Keys["GLOBAL_ContactData_Phone"]
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mat-layout-grid-cell">
+                <div class="mat-layout-grid">
+                    <div class="mat-layout-grid-inner mb-5">
+                        <div class="mat-layout-grid-cell">@LocalizationService.Keys["Footer_Services_Title"]</div>
+                    </div>
+                    <div class="mat-layout-grid-inner">
+                        <div class="mat-layout-grid-cell">
+                            <a href="/services/unique-dev">
+                                @LocalizationService.Keys["NavMenu_Services_UniqueDev"]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mat-layout-grid-inner">
+                        <div class="mat-layout-grid-cell">
+                            <a href="/services/web-dev">
+                                @LocalizationService.Keys["NavMenu_Services_WebDev"]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mat-layout-grid-inner">
+                        <div class="mat-layout-grid-cell">
+                            <a href="/services/mobile-dev">
+                                @LocalizationService.Keys["NavMenu_Services_MobileDev"]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mat-layout-grid-inner">
+                        <div class="mat-layout-grid-cell">
+                            <a href="/services/industry-4_0">
+                                @LocalizationService.Keys["NavMenu_Services_Industry40"]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mat-layout-grid-inner">
+                        <div class="mat-layout-grid-cell">
+                            <a href="/services/ux-dev">
+                                @LocalizationService.Keys["NavMenu_Services_UX"]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mat-layout-grid-inner">
+                        <div class="mat-layout-grid-cell">
+                            <a href="/services/ai-dev">
+                                @LocalizationService.Keys["NavMenu_Services_AI"]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mat-layout-grid-inner">
+                        <div class="mat-layout-grid-cell">
+                            <a href="/services/data-dev">
+                                @LocalizationService.Keys["NavMenu_Services_Data"]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mat-layout-grid-inner">
+                        <div class="mat-layout-grid-cell">
+
+                            <a href="/services/tech-we-use">
+                                @LocalizationService.Keys["NavMenu_Services_TechWeUse"]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mat-layout-grid-inner">
+                        <div class="mat-layout-grid-cell">
+                            <a href="/services/process-and-strategy">
+                                @LocalizationService.Keys["NavMenu_Services_TechWeUse"]
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mat-layout-grid-cell">
+                <div class="mat-layout-grid">
+                    <div class="mat-layout-grid-inner mb-5">
+                        <div class="mat-layout-grid-cell">@LocalizationService.Keys["Footer_UsefullLinks_Title"]</div>
+                    </div>
+                    <div class="mat-layout-grid-inner">
+                        <div class="mat-layout-grid-cell">
+                            <a href="/aboutus">
+                                @LocalizationService.Keys["Footer_UsefullLinks_AboutUs"]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mat-layout-grid-inner">
+                        <div class="mat-layout-grid-cell">
+                            <a href="/career">
+                                @LocalizationService.Keys["Footer_UsefullLinks_Career"]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mat-layout-grid-inner">
+                        <div class="mat-layout-grid-cell">
+                            <a href="/news">
+                                @LocalizationService.Keys["Footer_UsefullLinks_News"]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mat-layout-grid-inner">
+                        <div class="mat-layout-grid-cell">
+                            <a href="/privacy-policy">
+                                @LocalizationService.Keys["Footer_UsefullLinks_PrivacyPolicy"]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mat-layout-grid-inner">
+                        <div class="mat-layout-grid-cell">
+                            <a href="/contact">
+                                @LocalizationService.Keys["Footer_UsefullLinks_Contact"]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mat-layout-grid-inner">
+                        <div class="mat-layout-grid-cell">
+                            <a href="/references">
+                                @LocalizationService.Keys["Footer_UsefullLinks_References"]
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
