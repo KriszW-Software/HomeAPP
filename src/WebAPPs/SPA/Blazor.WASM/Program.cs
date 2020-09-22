@@ -20,11 +20,12 @@ namespace HomeAPP.WebAPPs.SPA.Blazor.WASM
         public static async Task Main(string[] args)
         {
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
+
+            builder.RootComponents.Add<App>("app");
+
             builder.Services.AddExternalServices()
                 .AddServices()
                 .AddHttpClient(builder.HostEnvironment.BaseAddress);
-
-            builder.RootComponents.Add<App>("app");
 
             await builder.Build().RunAsync();
         }
