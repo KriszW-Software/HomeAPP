@@ -12,10 +12,27 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.footer {
+    bottom: 0;
+    width: 100%;
+    background-color: var(--pCol);
+    color: var(--pColT);
+}
+
+    .footer a {
+        color: var(--pColT);
+        text-decoration:none;
+    }
+
+    .footer div{
+        margin: 5px;
+    }
+
 app {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .background-prim-color{
@@ -29,7 +46,7 @@ app {
 }
 
 .main {
-    flex: 1;
+    flex: 1 1 auto;
 }
 
 .content {
@@ -66,9 +83,6 @@ app {
 }
 
 @media (min-width: 768px) {
-    app {
-        flex-direction: row;
-    }
 
    
 }
