@@ -13,6 +13,7 @@ NavMenu_Services_UX: UX development
 NavMenu_Services_AI: AI development
 NavMenu_Services_Data: Data Architecture development
 NavMenu_Services_TechWeUse: Technologies we use
+NavMenu_Services_ProcessAndStrategy: Process and Strategy
 NavMenu_AboutUs: About us
 NavMenu_Contact: Contact
 NavMenu_Career: Career
@@ -45,25 +46,27 @@ AboutUs_WhatWeWorkWith_Paragraph: ccccc
 AboutUs_ImageAlt_WhatWeWorkWith: Image of what we work with
 Services_TextOverImage_Text: Text over image
 Services_ImageAlt_TextOverImage: Placeholder 1000x300
-Services_ServiceCards_Card1_Title: Unique software development
-Services_ServiceCards_Card1_Content: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Services_ServiceCards_Card2_Title: Web development
-Services_ServiceCards_Card2_Content: Aliquam tristique velit quis lacus sollicitudin, porta rutrum neque semper. 
-Services_ServiceCards_Card3_Title: Mobile development
-Services_ServiceCards_Card3_Content: Suspendisse commodo dapibus velit sit amet mollis. Cras a arcu non erat varius suscipit a a nisi. Duis quis lobortis nibh.
-Services_ServiceCards_Card4_Title: Industry 4.0
-Services_ServiceCards_Card4_Content: In elementum ullamcorper arcu, non sodales leo luctus nec. Duis sed mattis est. Duis accumsan a mauris et interdum. Pellentesque bibendum interdum turpis eget scelerisque. 
-Services_ServiceCards_Card5_Title: UX development
-Services_ServiceCards_Card5_Content: Duis sed blandit dolor, vitae commodo ante. Vivamus rhoncus ac eros ac dictum. Integer blandit nunc sit amet ullamcorper tristique.
-Services_ServiceCards_Card6_Title: AI development
-Services_ServiceCards_Card6_Content: Phasellus arcu mi, feugiat eget ultrices nec, ullamcorper in justo. Nunc varius rhoncus diam sit amet euismod. Maecenas non urna feugiat, auctor est vel, pellentesque ipsum
-Services_ServiceCards_Card7_Title: Data Architecture development
-Services_ServiceCards_Card7_Content: Sed tellus mi, fermentum nec hendrerit ac, dictum eu lacus. Proin vitae magna ac urna tempus laoreet. Aenean turpis urna, sollicitudin eu urna non, tristique molestie orci. Fusce finibus odio non ante finibus semper. Etiam gravida aliquam sem id suscipit. In et est at dui lobortis tincidunt.
-Services_ServiceCards_Card8_Title: Technologies we use
-Services_ServiceCards_Card8_Content: Nam velit magna, sodales sit amet tempor lacinia, tempus at erat. Nunc volutpat odio sit amet varius volutpat. Nullam ornare metus pellentesque enim vulputate, et congue sem semper.
-Services_ServiceCards_Card9_Title: Process & Strategy
-Services_ServiceCards_Card9_Content: Nullam ornare metus pellentesque enim vulputate, et congue sem semper. Nam velit magna, sodales sit amet tempor lacinia, tempus at erat. Nunc volutpat odio sit amet varius volutpat.
+Services_ServiceCards_Card_UniqueDev_Title: Unique software development
+Services_ServiceCards_Card_UniqueDev_Content: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Services_ServiceCards_Card_WebDev_Title: Web development
+Services_ServiceCards_Card_WebDev_Content: Aliquam tristique velit quis lacus sollicitudin, porta rutrum neque semper. 
+Services_ServiceCards_Card_MobileDev_Title: Mobile development
+Services_ServiceCards_Card_MobileDev_Content: Suspendisse commodo dapibus velit sit amet mollis. Cras a arcu non erat varius suscipit a a nisi. Duis quis lobortis nibh.
+Services_ServiceCards_Card_Industry4_0_Title: Industry 4.0
+Services_ServiceCards_Card_Industry4_0_Content: In elementum ullamcorper arcu, non sodales leo luctus nec. Duis sed mattis est. Duis accumsan a mauris et interdum. Pellentesque bibendum interdum turpis eget scelerisque. 
+Services_ServiceCards_Card_AIDev_Title: AI development
+Services_ServiceCards_Card_AIDev_Content: Phasellus arcu mi, feugiat eget ultrices nec, ullamcorper in justo. Nunc varius rhoncus diam sit amet euismod. Maecenas non urna feugiat, auctor est vel, pellentesque ipsum
+Services_ServiceCards_Card_DataDev_Title: Data Architecture development
+Services_ServiceCards_Card_DataDev_Content: Sed tellus mi, fermentum nec hendrerit ac, dictum eu lacus. Proin vitae magna ac urna tempus laoreet. Aenean turpis urna, sollicitudin eu urna non, tristique molestie orci. Fusce finibus odio non ante finibus semper. Etiam gravida aliquam sem id suscipit. In et est at dui lobortis tincidunt.
+Services_ServiceCards_Card_TwU_Title: Technologies we use
+Services_ServiceCards_Card_TwU_Content: Nam velit magna, sodales sit amet tempor lacinia, tempus at erat. Nunc volutpat odio sit amet varius volutpat. Nullam ornare metus pellentesque enim vulputate, et congue sem semper.
+Services_ServiceCards_Card_PaS_Title: Process & Strategy
+Services_ServiceCards_Card_PaS_Content: Nullam ornare metus pellentesque enim vulputate, et congue sem semper. Nam velit magna, sodales sit amet tempor lacinia, tempus at erat. Nunc volutpat odio sit amet varius volutpat.
 ServiceCardComponenet_CardAction_NavTo_Label: Learn more
+Services_UniqueSoftwareDev_Unique_Requirements_Title: Unique requirements require unique solutions
+Services_UniqueSoftwareDev_Unique_Requirements_Text: etus pellentesque enim vulputate, et congue sem semper. Nam velit m. tempor lacinia, tempus at erat. Nunc volutpat odio sit amet var
+Services_UniqueSoftwareDev_Questions_1: How do you plan my idea?
+Services_UniqueSoftwareDev_Questions_1_Answer: etus pellentesque enim vulputate, et congue sem semper. Nam velit m. tempor
 Footer_AboutUs_Title: About us
 Footer_AboutUs_HeadOffice: Head office
 Footer_AboutUs_EMAIL: Email
