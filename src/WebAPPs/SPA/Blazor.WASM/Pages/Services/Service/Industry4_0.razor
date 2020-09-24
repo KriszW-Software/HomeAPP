@@ -1,1 +1,66 @@
 ﻿@page "/services/industry-4_0"
+
+@inject ILanguageContainerService LanguageContainerService
+
+<TextOverImage Alt="@LanguageContainerService.Keys["Services_Industry4_0_ImageAlt_Title"]"
+               Src="https://via.placeholder.com/1000x300"
+               TextPosition="TextOverImageType.Centered">
+    <Text>
+        <MatH1>@LanguageContainerService.Keys["Services_Industry4_0_Title"]</MatH1>
+    </Text>
+</TextOverImage>
+
+<MatDivider Class="m-5" />
+
+<div class="mat-layout-grid">
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-cell">
+            <p>@LanguageContainerService.Keys["Services_Industry4_0_Title"]</p>
+        </div>
+    </div>
+
+    <MatDivider Class="m-5" />
+
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-cell">
+            <MatH3>@LanguageContainerService.Keys["Services_Industry4_0_InWhatSectorsCanYouCountOnUs_Title"]</MatH3>
+            <p>
+                @LanguageContainerService.Keys["Services_Industry4_0_InWhatSectorsCanYouCountOnUs_Text"]
+            </p>
+        </div>
+        <div class="mat-layout-grid-cell">
+            <img src="https://via.placeholder.com/500x300" alt="@LanguageContainerService.Keys["Services_Industry4_0_ImageAlt_InWhatSectorsCanYouCountOnUs"]" />
+        </div>
+    </div>
+
+
+    <MatDivider Class="m-3" />
+
+
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-cell">
+            <img src="https://via.placeholder.com/500x300" alt="@LanguageContainerService.Keys["Services_Industry4_0_ImageAlt_HowWePlanTheNewProject"]" />
+        </div>
+        <div class="mat-layout-grid-cell">
+            <MatH3>@LanguageContainerService.Keys["Services_Industry4_0_HowWePlanTheNewProject_Title"]</MatH3>
+            <p>
+                @LanguageContainerService.Keys["Services_Industry4_0_HowWePlanTheNewProject_Text"]
+            </p>
+        </div>
+    </div>
+
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-cell">
+            <img src="https://via.placeholder.com/500x300" alt="@LanguageContainerService.Keys["Services_Industry4_0_ImageAlt_WhatTechStackWeUseForIndustries"]" />
+        </div>
+        <div class="mat-layout-grid-cell">
+            <MatH3>@LanguageContainerService.Keys["Services_Industry4_0_WhatTechStackWeUseForIndustries_Title"]</MatH3>
+            <p>
+                @LanguageContainerService.Keys["Services_Industry4_0_WhatTechStackWeUseForIndustries_Text"]
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<HomeAPP.WebAPPs.SPA.Blazor.WASM.Pages.Contact.Components.ContactFooter />

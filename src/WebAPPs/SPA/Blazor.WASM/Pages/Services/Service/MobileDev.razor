@@ -1,1 +1,40 @@
 ﻿@page "/services/mobile-dev"
+
+@inject ILanguageContainerService LanguageContainerService
+
+<TextOverImage Alt="@LanguageContainerService.Keys["Services_MobileDev_ImageAlt_Title"]"
+               Src="https://via.placeholder.com/1000x300"
+               TextPosition="TextOverImageType.Centered">
+    <Text>
+        <MatH1>@LanguageContainerService.Keys["Services_MobileDev_Title"]</MatH1>
+    </Text>
+</TextOverImage>
+
+<MatDivider Class="m-5" />
+
+<div class="mat-layout-grid">
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-cell">
+            <MatH3>@LanguageContainerService.Keys["Services_MobileDev_WhatWeDoWithMobile_Title"]</MatH3>
+            <p>
+                @LanguageContainerService.Keys["Services_MobileDev_WhatWeDoWithMobile_Text"]
+            </p>
+        </div>
+        <div class="mat-layout-grid-cell">
+            <img src="https://via.placeholder.com/500x300" alt="@LanguageContainerService.Keys["Services_MobileDev_ImageAlt_WhatWeDoWitMobile"]" />
+        </div>
+    </div>
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-cell">
+            <img src="https://via.placeholder.com/500x300" alt="@LanguageContainerService.Keys["Services_MobileDev_ImageAlt_BestTimeForMobileApp"]" />
+        </div>
+        <div class="mat-layout-grid-cell">
+            <MatH3>@LanguageContainerService.Keys["Services_MobileDev_BestTimeForMobileApp_Title"]</MatH3>
+            <p>
+                @LanguageContainerService.Keys["Services_MobileDev_BestTimeForMobileApp_Text"]
+            </p>
+        </div>
+    </div>
+</div>
+
+<HomeAPP.WebAPPs.SPA.Blazor.WASM.Pages.Contact.Components.ContactFooter />
