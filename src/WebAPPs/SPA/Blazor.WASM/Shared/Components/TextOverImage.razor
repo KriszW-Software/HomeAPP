@@ -1,0 +1,29 @@
+﻿<div class="toi-container">
+    <img src="@Src" alt="@Alt" class="toi-image" style="width:100%;">
+    <div class="@GetClassFromPosition()">@Text</div>
+</div>
+
+@code{
+    [Parameter]
+    public string Alt { get; set; }
+
+    [Parameter]
+    public string Src { get; set; }
+
+    [Parameter]
+    public RenderFragment Text { get; set; }
+
+    [Parameter]
+    public TextOverImageType TextPosition { get; set; }
+
+    private string GetClassFromPosition()
+    {
+        return TextPosition switch
+        {
+            TextOverImageType.Centered => "toi-text-centered",
+            TextOverImageType.Left => "toi-text-left",
+            TextOverImageType.Right => "toi-text-right",
+            _ => "toi-text-centered",
+        };
+    }
+}

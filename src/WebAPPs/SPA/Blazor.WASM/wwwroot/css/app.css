@@ -45,6 +45,12 @@ app {
 .toi-text-centered {
 }
 
+.toi-text-right {
+}
+
+.toi-text-left {
+}
+
 .main {
     flex: 1 1 auto;
 }
