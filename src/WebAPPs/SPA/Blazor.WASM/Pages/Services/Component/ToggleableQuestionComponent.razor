@@ -1,0 +1,28 @@
+﻿<div>
+
+    <div class="d-flex align-items-center justify-content-between" @onclick="() => open = !open">
+        <span>@Question</span>
+        <MatIcon Icon="@IconName()" />
+    </div>
+
+    @if (open == true)
+    {
+        <div>
+            @Answer
+        </div>
+    }
+</div>
+
+
+@code{
+
+    private bool open = false;
+
+    private string IconName() => open ? MatIconNames.Remove : MatIconNames.Add;
+
+    [Parameter]
+    public string Question { get; set; }
+
+    [Parameter]
+    public RenderFragment Answer { get; set; }
+}
