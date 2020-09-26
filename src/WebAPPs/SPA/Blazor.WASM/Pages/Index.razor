@@ -1,15 +1,15 @@
 ﻿@page "/"
 
-@inject ILanguageContainerService LocalizationService
+@inject IStringLocalizer<Index> StringLocalizer
 
-<MatH1>@LocalizationService.Keys["Homepage_Title"]@*Egyedi szoftverek, mobil appok, ipari szoftverek fejlesztési*@</MatH1>
+<MatH1>@StringLocalizer["Unique software solutions, mobile and web apps, industrial software design solutions and Industry 4.0"]@*Egyedi szoftverek, mobil appok, ipari szoftverek fejlesztési*@</MatH1>
 
 @*Kép slide show*@
 
 
-<MatH2>@LocalizationService.Keys["Homepage_OurCompanyNotWorkingWithOldTech"]@*A cégünk nem foglalkozik a régi rendszerekkel, amit 1-2 éven belűl már le kell cserélni*@</MatH2>
+<MatH2>@StringLocalizer["We do NOT work with old technologies what you have to rewrite after 2-3 years"]@*A cégünk nem foglalkozik a régi rendszerekkel, amit 1-2 éven belűl már le kell cserélni*@</MatH2>
 @*kép*@
-<MatH2>@LocalizationService.Keys["Homepage_OurCompanyMotto"]@*Mi csak is a legújabb, és a projekthez legjobb technológiákat használjuk, mert mindenki meg érdemli azt hogy a lehető legújabb technológiát kapja a befektetésébe.*@</MatH2>
+<MatH2>@StringLocalizer["We only work with the latest and best technologies, because that is what our clients deserve for their money."]@*Mi csak is a legújabb, és a projekthez legjobb technológiákat használjuk, mert mindenki meg érdemli azt hogy a lehető legújabb technológiát kapja a befektetésébe.*@</MatH2>
 @*kép*@
 
 

@@ -1,22 +1,70 @@
 ﻿@page "/contact"
 
-@using HomeAPP.WebAPPs.SPA.Blazor.WASM.Pages.Contact.Components 
+@using HomeAPP.WebAPPs.SPA.Blazor.WASM.Pages.Contact.Components
 
-@inject ILanguageContainerService LocalizationService
+@inject IStringLocalizer<Contact> StringLocalizer
 @*bal olda*@
-<div>
-    <MatH1>@LocalizationService.Keys["Contact_Title"]</MatH1>
+<div class="mat-layout-grid">
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-inner"><MatH1>@StringLocalizer["Please contact us right now!"]</MatH1></div>
+    </div>
 
-    <p>@LocalizationService.Keys["Contact_WeWillContactYou"]</p>
-    <p>@LocalizationService.Keys["Contact_SendTender"]</p>
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-inner">
+            <p>@StringLocalizer["Would you work with us?  It would be a pleasure for us! Please send your message and we will reply within 24 hours"]</p>
+        </div>
+    </div>
 
-    <MatDivider />
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-inner">
+            <p>@StringLocalizer["You can send your tender here as well. It will speed up the process of getting your new project ready."]</p>
+        </div>
+    </div>
 
-    <MatH2>@LocalizationService.Keys["Contact_ContactData_Title"]</MatH2>
+    
     @*Közepre igazítva egymás alá*@
-    <span>@LocalizationService.Keys["GLOBAL_ContactData_Email"]</span>
-    <span>@LocalizationService.Keys["GLOBAL_ContactData_Phone"]</span>
-    <span>@LocalizationService.Keys["GLOBAL_ContactData_LandLine"]</span>
+    <span><a href="mailto:info@kwsoft.dev">info@kwsoft.dev</a></span>
+    <span><a href="tel:+36309136248">+36309136248</a></span>
+    <span>@StringLocalizer["No landline yet"]</span>
+    <span>@StringLocalizer["Head office"]: @StringLocalizer["Hungary"], 9408 Sopron-Görbehalom Csillés köz 1</span>
+</div>
+
+<MatDivider Class="m-5" />
+
+<div class="mat-layout-grid">
+
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-inner"><MatH2>@StringLocalizer["Contact"]</MatH2></div>
+    </div>
+
+    <div class="mat-layout-grid-inner mb-4">
+        <div class="mat-layout-grid-cell">KriszW Software</div>
+    </div>
+
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-cell">
+            @StringLocalizer["Email"]: <a href="mailto:info@kwsoft.dev">info@kwsoft.dev</a>
+        </div>
+    </div>
+
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-cell">
+            @StringLocalizer["Phone number"]: <a href="tel:+36309136248">+36309136248</a>
+        </div>
+    </div>
+
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-cell">
+            @StringLocalizer["Head office"]: @StringLocalizer["Hungary"], 9408 Sopron-Görbehalom Csillés köz 1
+        </div>
+    </div>
+
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-cell">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2259.3549679757352!2d16.495889057041467!3d47.66808508236277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c253c7a59e775%3A0xf6873e50a265cccd!2zU29wcm9uLCBDc2lsbMOpcyBrw7Z6IDEsIDk0MDg!5e0!3m2!1shu!2shu!4v1601013873634!5m2!1shu!2shu" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+
 </div>
 
 @*jobb olda*@

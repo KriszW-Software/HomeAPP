@@ -1,4 +1,4 @@
-﻿@inject ILanguageContainerService LocalizationService
+﻿@inject IStringLocalizer<Footer> StringLocalizer
 
 <footer class="footer">
     <div class="mat-layout-grid">
@@ -6,24 +6,24 @@
             <div class="mat-layout-grid-cell">
                 <div class="mat-layout-grid">
                     <div class="mat-layout-grid-inner mb-5">
-                        <div class="mat-layout-grid-cell">@LocalizationService.Keys["Footer_AboutUs_Title"]</div>
+                        <div class="mat-layout-grid-cell">@StringLocalizer["About us"]</div>
                     </div>
                     <div class="mat-layout-grid-inner mb-4">
-                        <div class="mat-layout-grid-cell">@LocalizationService.Keys["GLOBAL_BRANDNAME"]</div>
+                        <div class="mat-layout-grid-cell">KriszW Software</div>
                     </div>
                     <div class="mat-layout-grid-inner">
                         <div class="mat-layout-grid-cell">
-                            @LocalizationService.Keys["Footer_AboutUs_HeadOffice"]: @LocalizationService.Keys["GLOBAL_HEADOFFICE_ADDRESS"]
+                            @StringLocalizer["Head office"]: @StringLocalizer["Hungary"], 9408 Sopron-Görbehalom Csillés köz 1
                         </div>
                     </div>
                     <div class="mat-layout-grid-inner">
                         <div class="mat-layout-grid-cell">
-                            @LocalizationService.Keys["Footer_AboutUs_EMAIL"]: @LocalizationService.Keys["GLOBAL_ContactData_Email"]
+                            @StringLocalizer["Email"]: <a href="mailto:info@kwsoft.dev">info@kwsoft.dev</a>
                         </div>
                     </div>
                     <div class="mat-layout-grid-inner">
                         <div class="mat-layout-grid-cell">
-                            @LocalizationService.Keys["Footer_AboutUs_Phone"]: @LocalizationService.Keys["GLOBAL_ContactData_Phone"]
+                            @StringLocalizer["Phone number"]: <a href="tel:+36309136248">+36309136248</a>
                         </div>
                     </div>
                 </div>
@@ -31,33 +31,33 @@
             <div class="mat-layout-grid-cell">
                 <div class="mat-layout-grid">
                     <div class="mat-layout-grid-inner mb-5">
-                        <div class="mat-layout-grid-cell">@LocalizationService.Keys["Footer_Services_Title"]</div>
+                        <div class="mat-layout-grid-cell">@StringLocalizer["Services"]</div>
                     </div>
                     <div class="mat-layout-grid-inner">
                         <div class="mat-layout-grid-cell">
                             <a href="/services/unique-dev">
-                                @LocalizationService.Keys["NavMenu_Services_UniqueDev"]
+                                @StringLocalizer["Unique software development"]
                             </a>
                         </div>
                     </div>
                     <div class="mat-layout-grid-inner">
                         <div class="mat-layout-grid-cell">
                             <a href="/services/web-dev">
-                                @LocalizationService.Keys["NavMenu_Services_WebDev"]
+                                @StringLocalizer["Web development"]
                             </a>
                         </div>
                     </div>
                     <div class="mat-layout-grid-inner">
                         <div class="mat-layout-grid-cell">
                             <a href="/services/mobile-dev">
-                                @LocalizationService.Keys["NavMenu_Services_MobileDev"]
+                                @StringLocalizer["Mobile development"]
                             </a>
                         </div>
                     </div>
                     <div class="mat-layout-grid-inner">
                         <div class="mat-layout-grid-cell">
                             <a href="/services/industry-4_0">
-                                @LocalizationService.Keys["NavMenu_Services_Industry40"]
+                                @StringLocalizer["Industry 4.0"]
                             </a>
                         </div>
                     </div>
@@ -65,14 +65,14 @@
                         <div class="mat-layout-grid-cell">
 
                             <a href="/services/tech-we-use">
-                                @LocalizationService.Keys["NavMenu_Services_TechWeUse"]
+                                @StringLocalizer["Technologies we use"]
                             </a>
                         </div>
                     </div>
                     <div class="mat-layout-grid-inner">
                         <div class="mat-layout-grid-cell">
                             <a href="/services/process-and-strategy">
-                                @LocalizationService.Keys["NavMenu_Services_TechWeUse"]
+                                @StringLocalizer["Process and Strategy"]
                             </a>
                         </div>
                     </div>
@@ -81,47 +81,47 @@
             <div class="mat-layout-grid-cell">
                 <div class="mat-layout-grid">
                     <div class="mat-layout-grid-inner mb-5">
-                        <div class="mat-layout-grid-cell">@LocalizationService.Keys["Footer_UsefullLinks_Title"]</div>
+                        <div class="mat-layout-grid-cell">@StringLocalizer["Usefull links"]</div>
                     </div>
                     <div class="mat-layout-grid-inner">
                         <div class="mat-layout-grid-cell">
                             <a href="/aboutus">
-                                @LocalizationService.Keys["Footer_UsefullLinks_AboutUs"]
+                                @StringLocalizer["About us"]
                             </a>
                         </div>
                     </div>
                     <div class="mat-layout-grid-inner">
                         <div class="mat-layout-grid-cell">
                             <a href="/career">
-                                @LocalizationService.Keys["Footer_UsefullLinks_Career"]
+                                @StringLocalizer["Career"]
                             </a>
                         </div>
                     </div>
                     <div class="mat-layout-grid-inner">
                         <div class="mat-layout-grid-cell">
                             <a href="/news">
-                                @LocalizationService.Keys["Footer_UsefullLinks_News"]
+                                @StringLocalizer["News"]
                             </a>
                         </div>
                     </div>
                     <div class="mat-layout-grid-inner">
                         <div class="mat-layout-grid-cell">
                             <a href="/privacy-policy">
-                                @LocalizationService.Keys["Footer_UsefullLinks_PrivacyPolicy"]
+                                @StringLocalizer["Privacy policy"]
                             </a>
                         </div>
                     </div>
                     <div class="mat-layout-grid-inner">
                         <div class="mat-layout-grid-cell">
                             <a href="/contact">
-                                @LocalizationService.Keys["Footer_UsefullLinks_Contact"]
+                                @StringLocalizer["Contact"]
                             </a>
                         </div>
                     </div>
                     <div class="mat-layout-grid-inner">
                         <div class="mat-layout-grid-cell">
                             <a href="/references">
-                                @LocalizationService.Keys["Footer_UsefullLinks_References"]
+                                @StringLocalizer["References"]
                             </a>
                         </div>
                     </div>

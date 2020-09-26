@@ -1,12 +1,12 @@
 ﻿@page "/services/web-dev"
 
-@inject ILanguageContainerService LanguageContainerService
+@inject IStringLocalizer<WebDev> StringLocalizer
 
-<TextOverImage Alt="@LanguageContainerService.Keys["Services_WebDev_ImageAlt_Title"]"
+<TextOverImage Alt="@StringLocalizer["Services_WebDev_ImageAlt_Title"]"
                Src="https://via.placeholder.com/1000x300"
                TextPosition="TextOverImageType.Centered">
     <Text>
-        <MatH1>@LanguageContainerService.Keys["Services_WebDev_Title"]</MatH1>
+        <MatH1>@StringLocalizer["Services_WebDev_Title"]</MatH1>
     </Text>
 </TextOverImage>
 
@@ -15,23 +15,23 @@
 <div class="mat-layout-grid">
     <div class="mat-layout-grid-inner">
         <div class="mat-layout-grid-cell">
-            <MatH3>@LanguageContainerService.Keys["Services_WebDev_WhatWeDoWithWeb_Title"]</MatH3>
+            <MatH3>@StringLocalizer["Services_WebDev_WhatWeDoWithWeb_Title"]</MatH3>
             <p>
-                @LanguageContainerService.Keys["Services_WebDev_WhatWeDoWithWeb_Text"]
+                @StringLocalizer["Services_WebDev_WhatWeDoWithWeb_Text"]
             </p>
         </div>
         <div class="mat-layout-grid-cell">
-            <img src="https://via.placeholder.com/500x300" alt="@LanguageContainerService.Keys["Services_WebDev_ImageAlt_WhatWeDoWithWeb"]" />
+            <img src="https://via.placeholder.com/500x300" alt="@StringLocalizer["Services_WebDev_ImageAlt_WhatWeDoWithWeb"]" />
         </div>
     </div>
     <div class="mat-layout-grid-inner">
         <div class="mat-layout-grid-cell">
-            <img src="https://via.placeholder.com/500x300" alt="@LanguageContainerService.Keys["Services_WebDev_ImageAlt_HowWePlanTheNewProject"]" />
+            <img src="https://via.placeholder.com/500x300" alt="@StringLocalizer["Services_WebDev_ImageAlt_HowWePlanTheNewProject"]" />
         </div>
         <div class="mat-layout-grid-cell">
-            <MatH3>@LanguageContainerService.Keys["Services_WebDev_HowWePlanTheNewProject_Title"]</MatH3>
+            <MatH3>@StringLocalizer["Services_WebDev_HowWePlanTheNewProject_Title"]</MatH3>
             <p>
-                @LanguageContainerService.Keys["Services_WebDev_HowWePlanTheNewProject_Text"]
+                @StringLocalizer["Services_WebDev_HowWePlanTheNewProject_Text"]
             </p>
         </div>
     </div>
@@ -40,9 +40,9 @@
 
     <div class="mat-layout-grid-inner">
         <div class="mat-layout-grid-cell">
-            <MatH3>@LanguageContainerService.Keys["Services_WebDev_HowWeChooseTechStack_Title"]</MatH3>
+            <MatH3>@StringLocalizer["Services_WebDev_HowWeChooseTechStack_Title"]</MatH3>
             <p>
-                @LanguageContainerService.Keys["Services_WebDev_HowWeChooseTechStack_Text"]
+                @StringLocalizer["Services_WebDev_HowWeChooseTechStack_Text"]
             </p>
         </div>
     </div>

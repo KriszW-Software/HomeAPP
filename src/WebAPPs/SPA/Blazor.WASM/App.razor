@@ -1,5 +1,6 @@
 @inject IStorageRepository StorageRepository
-@inject ILanguageContainerService LanguageContainerService
+
+@using System.Globalization; 
 
 <MatThemeProvider Theme="theme">
     <Router AppAssembly="@typeof(Program).Assembly">
@@ -25,7 +26,13 @@
     {
         var cultureInfo = await StorageRepository.GetItem<string>("lang");
 
-        if(cultureInfo != default) LanguageContainerService.SetLanguage(System.Globalization.CultureInfo.GetCultureInfo(cultureInfo));
+        var culture = CultureInfo.GetCultureInfo(cultureInfo);
+
+        if (culture != default)
+        {
+            CultureInfo.CurrentCulture = culture;
+            CultureInfo.CurrentUICulture = culture;
+        }
 
         await base.OnInitializedAsync();
     }

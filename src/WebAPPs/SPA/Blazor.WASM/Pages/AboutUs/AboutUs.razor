@@ -1,19 +1,19 @@
 ﻿@page "/aboutus"
 
-@inject ILanguageContainerService LocalizationService
+@inject IStringLocalizer<AboutUs> StringLocalizer
 
 
 
-<h1 class="">@LocalizationService.Keys["AboutUs_AboutUs"]</h1>
+<h1 class="">@StringLocalizer["About us"]</h1>
 
 <div class="mat-layout-grid">
     <div class="mat-layout-grid-inner">
         <div class="mat-layout-grid-cell">
-            <h2>@LocalizationService.Keys["AboutUs_OurCompany"]</h2>
-            <p>@LocalizationService.Keys["AboutUs_OurCompany_Paragraph"]</p>
+            <h2>@StringLocalizer["Our company"]</h2>
+            <p>@StringLocalizer["Azért alapítottuk ezt a céget, mert mi az ügyfeleinknek a legjobbat akarjuk. A cégünk a legfrisebb és a próblémához legjobban fekvő technológiákat használjuk, hiszen ezt érdemli mindenki aki egy szoftvert vásárol. A fő célünk ezzel, hogy az ügyfeleink kiemelkedjenek a piacon és így az innováció és a fejlődést jelképezzék ezzel a versenyképpeségüket növelve."]</p>
         </div>
         <div class="mat-layout-grid-cell">
-            <img src="http://cdn.kwsoft.dev/img/aboutus/ourcompany.svg" alt="@LocalizationService.Keys["AboutUs_ImageAlt_OurCompany"]" />
+            <img src="http://cdn.kwsoft.dev/img/aboutus/ourcompany.svg" alt="@StringLocalizer["Image of our company"]" />
         </div>
     </div>
 </div>
@@ -23,25 +23,11 @@
 <div class="mat-layout-grid">
     <div class="mat-layout-grid-inner">
         <div class="mat-layout-grid-cell">
-            <img src="http://cdn.kwsoft.dev/img/aboutus/whychooseus.svg" alt="@LocalizationService.Keys["AboutUs_ImageAlt_WhyChooseUs"]" />
+            <img src="http://cdn.kwsoft.dev/img/aboutus/whychooseus.svg" alt="@StringLocalizer["Why you should choose us"]" />
         </div>
         <div class="mat-layout-grid-cell">
-            <h2>@LocalizationService.Keys["AboutUs_WhyChooseUs"]</h2>
-            <p>@LocalizationService.Keys["AboutUs_WhyChooseUs_Paragraph"]</p>
-        </div>
-    </div>
-</div>
-
-<MatDivider />
-
-<div class="mat-layout-grid">
-    <div class="mat-layout-grid-inner">
-        <div class="mat-layout-grid-cell">
-            <h2>@LocalizationService.Keys["AboutUs_HowWeWork"]</h2>
-            <p>@LocalizationService.Keys["AboutUs_HowWeWork_Paragraph"]</p>
-        </div>
-        <div class="mat-layout-grid-cell">
-            <img src="http://cdn.kwsoft.dev/img/aboutus/whychooseus.svg" alt="@LocalizationService.Keys["AboutUs_ImageAlt_HowWeWork"]" />
+            <h2>@StringLocalizer["Why you should choose us"]</h2>
+            <p>@StringLocalizer["Mi azt tartjuk szemelőtt, hogy te mit szeretnél. Segítűnk elkészíteni, kitalálni és tökéletesíteni az ötletedet. Úgy építettük fel a rendszert amivel dolgozunk, hogy a vevőt azaz téged tartunk szemelőtt, így az lesz az ötletedből amit te szeretnél. A másik fontos pontunk az volt hogy nem szeretnénk téged megvárakoztatni. A lehető leggyorsabban a kezedbe adunk egy rendszert amit már tudsz használni, és utána még azt fejleszzük tovább így akár már 2 hónapon belűl is használhatod azt amit megrendeltél. Ezt segíti az, hogy a szakmában a legjobbak közül választottunk és úgy választjuk ki a technológákat, hogy a te ötletedhez alkalmazkodjon."]</p>
         </div>
     </div>
 </div>
@@ -51,11 +37,25 @@
 <div class="mat-layout-grid">
     <div class="mat-layout-grid-inner">
         <div class="mat-layout-grid-cell">
-            <h2>@LocalizationService.Keys["AboutUs_WhatWeWorkWith"]</h2>
-            <p>@LocalizationService.Keys["AboutUs_WhatWeWorkWith_Paragraph"]</p>
+            <h2>@StringLocalizer["How we create your dream"]</h2>
+            <p>@StringLocalizer["bbbb"]</p>
         </div>
         <div class="mat-layout-grid-cell">
-            <img src="http://cdn.kwsoft.dev/img/aboutus/whatweworkwith.svg" alt="@LocalizationService.Keys["AboutUs_ImageAlt_WhatWeWorkWith"]" />
+            <img src="http://cdn.kwsoft.dev/img/aboutus/whychooseus.svg" alt="@StringLocalizer["Image of how we work"]" />
+        </div>
+    </div>
+</div>
+
+<MatDivider />
+
+<div class="mat-layout-grid">
+    <div class="mat-layout-grid-inner">
+        <div class="mat-layout-grid-cell">
+            <h2>@StringLocalizer["With what we develop your dream"]</h2>
+            <p>@StringLocalizer["ccccccc"]</p>
+        </div>
+        <div class="mat-layout-grid-cell">
+            <img src="http://cdn.kwsoft.dev/img/aboutus/whatweworkwith.svg" alt="@StringLocalizer["Image of what we work with"]" />
         </div>
     </div>
 </div>

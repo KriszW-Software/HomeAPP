@@ -1,5 +1,5 @@
 ﻿@page "/services"
-@inject ILanguageContainerService LocalizationService
+@inject IStringLocalizer<Services> StringLocalizer
 
 @using HomeAPP.WebAPPs.SPA.Blazor.WASM.Pages.Services.Component 
 
@@ -20,12 +20,12 @@
 *@
 
 <TextOverImage 
-               Alt="@LocalizationService.Keys["Services_ImageAlt_TextOverImage"]" 
+               Alt="@StringLocalizer["Placeholder 1000x300"]" 
                Src="https://via.placeholder.com/1000x300" 
                TextPosition="TextOverImageType.Centered" 
 >
     <Text>
-        @LocalizationService.Keys["Services_TextOverImage_Text"]
+        @StringLocalizer["Text over image test"]
     </Text>
 </TextOverImage>
 
@@ -36,36 +36,36 @@
             <div class="mat-layout-grid-cell mat-layout-grid-cell">
                 <ServiceCardComponent ImageSRC="https://via.placeholder.com/300" ServiceURL="/services/unique-dev">
 
-                    <Title>@LocalizationService.Keys["Services_ServiceCards_Card_UniqueDev_Title"]</Title>
+                    <Title>@StringLocalizer["Unique software development"]</Title>
 
-                    <Content>@LocalizationService.Keys["Services_ServiceCards_Card_UniqueDev_Content"]</Content>
+                    <Content>@StringLocalizer["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."]</Content>
 
                 </ServiceCardComponent>
             </div>
             <div class="mat-layout-grid-cell mat-layout-grid-cell">
                 <ServiceCardComponent ImageSRC="https://via.placeholder.com/300" ServiceURL="/services/web-dev">
 
-                    <Title>@LocalizationService.Keys["Services_ServiceCards_Card_WebDev_Title"]</Title>
+                    <Title>@StringLocalizer["Web development"]</Title>
 
-                    <Content>@LocalizationService.Keys["Services_ServiceCards_Card_WebDev_Content"]</Content>
+                    <Content>@StringLocalizer["Aliquam tristique velit quis lacus sollicitudin, porta rutrum neque semper. "]</Content>
 
                 </ServiceCardComponent>
             </div>
             <div class="mat-layout-grid-cell mat-layout-grid-cell">
                 <ServiceCardComponent ImageSRC="https://via.placeholder.com/300" ServiceURL="/services/mobile-dev">
 
-                    <Title>@LocalizationService.Keys["Services_ServiceCards_Card_MobileDev_Title"]</Title>
+                    <Title>@StringLocalizer["Mobile development"]</Title>
 
-                    <Content>@LocalizationService.Keys["Services_ServiceCards_Card_MobileDev_Content"]</Content>
+                    <Content>@StringLocalizer["Suspendisse commodo dapibus velit sit amet mollis. Cras a arcu non erat varius suscipit a a nisi. Duis quis lobortis nibh."]</Content>
 
                 </ServiceCardComponent>
             </div>
             <div class="mat-layout-grid-cell mat-layout-grid-cell">
                 <ServiceCardComponent ImageSRC="https://via.placeholder.com/300" ServiceURL="/services/industry-4_0">
 
-                    <Title>@LocalizationService.Keys["Services_ServiceCards_Card_Industry4_0_Title"]</Title>
+                    <Title>@StringLocalizer["Industry 4.0"]</Title>
 
-                    <Content>@LocalizationService.Keys["Services_ServiceCards_Card_Industry4_0_Content"]</Content>
+                    <Content>@StringLocalizer["In elementum ullamcorper arcu, non sodales leo luctus nec. Duis sed mattis est. Duis accumsan a mauris et interdum. Pellentesque bibendum interdum turpis eget scelerisque. "]</Content>
 
                 </ServiceCardComponent>
             </div>
@@ -73,9 +73,9 @@
             <div class="mat-layout-grid-cell mat-layout-grid-cell">
                 <ServiceCardComponent ImageSRC="https://via.placeholder.com/300" ServiceURL="/services/tech-we-use">
 
-                    <Title>@LocalizationService.Keys["Services_ServiceCards_Card_TwU_Title"]</Title>
+                    <Title>@StringLocalizer["Technologies we use"]</Title>
 
-                    <Content>@LocalizationService.Keys["Services_ServiceCards_Card_TwU_Content"]</Content>
+                    <Content>@StringLocalizer["Phasellus arcu mi, feugiat eget ultrices nec, ullamcorper in justo. Nunc varius rhoncus diam sit amet euismod. Maecenas non urna feugiat, auctor est vel, pellentesque ipsum"]</Content>
 
                 </ServiceCardComponent>
             </div>
@@ -83,9 +83,9 @@
             <div class="mat-layout-grid-cell mat-layout-grid-cell">
                 <ServiceCardComponent ImageSRC="https://via.placeholder.com/300" ServiceURL="/services/process-and-strategy">
 
-                    <Title>@LocalizationService.Keys["Services_ServiceCards_Card_PaS_Title"]</Title>
+                    <Title>@StringLocalizer["Process & Strategy"]</Title>
 
-                    <Content>@LocalizationService.Keys["Services_ServiceCards_Card_PaS_Content"]</Content>
+                    <Content>@StringLocalizer["Nullam ornare metus pellentesque enim vulputate, et congue sem semper. Nam velit magna, sodales sit amet tempor lacinia, tempus at erat. Nunc volutpat odio sit amet varius volutpat."]</Content>
 
                 </ServiceCardComponent>
             </div>

@@ -1,13 +1,13 @@
 ﻿@using HomeAPP.WebAPPs.SPA.Blazor.WASM.Shared.Settings
 
-@inject ILanguageContainerService LocalizationService
+@inject IStringLocalizer<NavMenu> StringLocalizer
 
 <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3 fixed-top background-prim-color d-flex">
     <div class="container">
-        <a class="navbar-brand text-light align-self-baseline" href="/">@LocalizationService.Keys["GLOBAL_BRANDNAME"]</a>
+        <a class="navbar-brand text-light align-self-baseline" href="/">KriszW Software</a>
         
         <button class="navbar-toggler" @onclick="ToggleNavMenu" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="@LocalizationService.Keys["NavMenu_ToggleButtonLabel"]">
+                aria-expanded="false" aria-label="@StringLocalizer["Toggle navigation"]">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="@NavMenuCssClass navbar-collapse d-sm-inline-flex flex-sm-row-reverse">
@@ -15,14 +15,14 @@
 
                 <div class="nav-item">
                     <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="">
-                        @LocalizationService.Keys["NavMenu_HomePage"]
+                        @StringLocalizer["Home"]
                     </NavLink>
                 </div>
 
                 <div class="nav-item dropdown" @onmouseover="() => SetCollapseServices(false)" @onmouseout="() => SetCollapseServices(true)">
                     <div class="d-flex justify-content-between align-items-center mb-0">
                         <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/services">
-                            @LocalizationService.Keys["NavMenu_Services"]
+                            @StringLocalizer["Services"]
                         </NavLink>
 
                         <MatIcon Icon="@ServicesDropdownIconClass" Class="text-white" />
@@ -32,26 +32,26 @@
 
                     <div class="dropdown-menu @(collapseServices ? "d-none" : "d-block") text-white background-prim-color mt-0">
                         <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/services/unique-dev">
-                            @LocalizationService.Keys["NavMenu_Services_UniqueDev"]
+                            @StringLocalizer["Unique software development"]
                         </NavLink>
                         <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/services/web-dev">
-                            @LocalizationService.Keys["NavMenu_Services_WebDev"]
+                            @StringLocalizer["Web development"]
                         </NavLink>
                         <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/services/mobile-dev">
-                            @LocalizationService.Keys["NavMenu_Services_MobileDev"]
+                            @StringLocalizer["Mobile development"]
                         </NavLink>
                         <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/services/industry-4_0">
-                            @LocalizationService.Keys["NavMenu_Services_Industry40"]
+                            @StringLocalizer["Industry 4.0"]
                         </NavLink>
                         
                         <MatDivider />
 
                         <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/services/tech-we-use">
-                            @LocalizationService.Keys["NavMenu_Services_TechWeUse"]
+                            @StringLocalizer["Technologies we use"]
                         </NavLink>
 
                         <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/services/process-and-strategy">
-                            @LocalizationService.Keys["NavMenu_Services_ProcessAndStrategy"]
+                            @StringLocalizer["Process and Strategy"]
                         </NavLink>
                     </div>
                 </div>
@@ -60,25 +60,25 @@
 
                 <div class="nav-item">
                     <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/aboutus">
-                        @LocalizationService.Keys["NavMenu_AboutUs"]
+                        @StringLocalizer["About us"]
                     </NavLink>
                 </div>
 
                 <div class="nav-item">
                     <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/contact">
-                        @LocalizationService.Keys["NavMenu_Contact"]
+                        @StringLocalizer["Contact"]
                     </NavLink>
                 </div>
 
                 <div class="nav-item">
                     <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/career">
-                        @LocalizationService.Keys["NavMenu_Career"]
+                        @StringLocalizer["Career"]
                     </NavLink>
                 </div>
 
                 <div class="nav-item">
                     <NavLink class="nav-link text-light" Match="NavLinkMatch.All" href="/news">
-                        @LocalizationService.Keys["NavMenu_News"]
+                        @StringLocalizer["News"]
                     </NavLink>
                 </div>
 

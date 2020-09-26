@@ -9,18 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Resources\de-DE.yml" />
-    <None Remove="Resources\en-US.yml" />
-    <None Remove="Resources\hu-HU.yml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\de-DE.yml" />
-    <EmbeddedResource Include="Resources\en-US.yml" />
-    <EmbeddedResource Include="Resources\hu-HU.yml" />
-  </ItemGroup>
-
-  <ItemGroup>
 	<PackageReference Include="Blazor.Extensions.Storage" Version="1.1.0-preview3" />
 	<PackageReference Include="BlazorPro.Spinkit" Version="1.2.0" />
 	<PackageReference Include="Fluxor.Blazor.Web" Version="3.7.0" />
@@ -31,9 +19,10 @@
 	<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.1" PrivateAssets="all" />
 	<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="3.2.1" PrivateAssets="all" />
 	<PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
+	<PackageReference Include="Microsoft.Extensions.Localization" Version="3.1.8" />
+	<PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="3.1.8" />
 	<PackageReference Include="System.Text.Json" Version="5.0.0-preview.5.20278.1" />
     <PackageReference Include="System.Net.Http.Json" Version="3.2.1" />
-	<PackageReference Include="AKSoftware.Localization.MultiLanguages" Version="3.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,7 +37,7 @@
   <ItemGroup>
     <Folder Include="Pages\Account\" />
     <Folder Include="Pages\Project\" />
-    <Folder Include="Services\Services\Abstractions\" />
+    <Folder Include="Resources\" />
     <Folder Include="Services\Services\Implementations\" />
     <Folder Include="Utilities\ServerValidation\" />
   </ItemGroup>

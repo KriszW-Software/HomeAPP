@@ -1,4 +1,4 @@
-﻿@inject ILanguageContainerService LocalizationService
+﻿@inject IStringLocalizer<ServiceCardComponent> StringLocalizer
 @inject NavigationManager NavManager
 
 <MatCard Class="service-card-container">
@@ -22,7 +22,7 @@
         <MatCardActions>
             <MatCardActionButtons>
 
-                <MatButton OnClick="() => NavManager.NavigateTo(ServiceURL)" Raised="true" Label="@LocalizationService.Keys["ServiceCardComponenet_CardAction_NavTo_Label"]" />
+                <MatButton OnClick="() => NavManager.NavigateTo(ServiceURL)" Raised="true" Label="@StringLocalizer["Learn more"]" />
 
             </MatCardActionButtons>
         </MatCardActions>

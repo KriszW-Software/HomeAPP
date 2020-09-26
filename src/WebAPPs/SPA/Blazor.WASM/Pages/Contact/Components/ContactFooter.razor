@@ -1,4 +1,4 @@
-﻿@inject ILanguageContainerService LocalizationService
+﻿@inject IStringLocalizer<ContactFooter> StringLocalizer
 @inject NavigationManager NavManager 
 
 @*
@@ -9,13 +9,13 @@
 <div class="mat-layout-grid">
     <div class="mat-layout-grid-inner">
         <div class="mat-layout-grid-cell">
-            @LocalizationService.Keys["ContactFooter_GoToContact"]
+            @StringLocalizer["Any project in your mind? Contact us right now"]
         </div>
         <div class="mat-layout-grid-cell">
-            <img src="http://cdn.kwsoft.dev/img/aboutus/gotocontact.svg" alt="@LocalizationService.Keys["ContactFooter_ImageAlt_GoToContact"]" />
+            <img src="http://cdn.kwsoft.dev/img/aboutus/gotocontact.svg" alt="@StringLocalizer["Contact us now image"]" />
         </div>
         <div class="mat-layout-grid-cell">
-            <MatButton Raised="true" OnClick="() => GoToContact()" Label="@LocalizationService.Keys["ContactFooter_GoToContact_ButtonLabel"]" />
+            <MatButton Raised="true" OnClick="() => GoToContact()" Label="@StringLocalizer["Contact us"]" />
         </div>
     </div>
 </div>

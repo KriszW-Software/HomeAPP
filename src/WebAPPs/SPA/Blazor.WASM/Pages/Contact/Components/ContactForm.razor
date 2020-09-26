@@ -1,4 +1,4 @@
-﻿@inject ILanguageContainerService LocalizationService
+﻿@inject IStringLocalizer<ContactForm> StringLocalizer
 
 @*<EditForm Model="tenderModel" OnSubmit="() => Task.CompletedTask">
     <ServerSideValidator @ref="_serverSideValidator" />
@@ -9,7 +9,7 @@
 
     </MatDialogContent>
     <MatDialogActions>
-        <MatButton TrailingIcon="@MatIconNames.Cloud_upload" OnClick="Submit" Label="@LocalizationService.Keys["Contact_ContactForm_SubmitLabel"]" />
+        <MatButton TrailingIcon="@MatIconNames.Cloud_upload" OnClick="Submit" Label="@StringLocalizer["Contact_ContactForm_SubmitLabel"]" />
     </MatDialogActions>
 </EditForm>*@
 

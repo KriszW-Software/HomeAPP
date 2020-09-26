@@ -1,12 +1,14 @@
 ﻿@page "/settings"
 
-@inject ILanguageContainerService LanguageContainerService
+@inject IStringLocalizer<Settings> StringLocalizer
 @inject IStorageRepository StorageRepo
 @inject NavigationManager NavManager
 
+@using System.Globalization
+
 <MatExpansionPanel>
     <MatExpansionPanelSummary>
-        <MatExpansionPanelHeader>@LanguageContainerService.Keys["Settings_Language"]</MatExpansionPanelHeader>
+        <MatExpansionPanelHeader>@StringLocalizer["Choose your language"]</MatExpansionPanelHeader>
     </MatExpansionPanelSummary>
     <MatExpansionPanelDetails>
 
@@ -24,10 +26,13 @@
 @code{
     async Task SetLanguage(string cultureInfo)
     {
-        LanguageContainerService.SetLanguage(System.Globalization.CultureInfo.GetCultureInfo(cultureInfo));
+        var culture = CultureInfo.GetCultureInfo(cultureInfo);
+        CultureInfo.CurrentCulture = culture;
+        CultureInfo.CurrentUICulture = culture;
+        
         await StorageRepo.SetItem("lang", cultureInfo);
 
-        NavManager.NavigateTo("/", true);
+        //NavManager.NavigateTo("/", true);
 
         StateHasChanged();
     }
