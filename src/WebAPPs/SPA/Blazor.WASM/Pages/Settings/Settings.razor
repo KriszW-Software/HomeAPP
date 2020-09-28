@@ -32,8 +32,6 @@
         
         await StorageRepo.SetItem("lang", cultureInfo);
 
-        //NavManager.NavigateTo("/", true);
-
-        StateHasChanged();
+        NavManager.NavigateTo("/settings", true);
     }
 }
